@@ -10,7 +10,7 @@
 
     <h1>Contact</h1>
 
-    <form action="process-form.php" method="post">
+    <form action="process-form.php" method="post" >
 
         <label for="name">Name</label>
         <input type="text" id="name" name="name">
@@ -49,9 +49,11 @@
 
         <br>
 
-        <button>Send</button>
-
+        <button name="send">Send</button>
+        <button name='submit' value='0'>display</button>
+  <button name='submit' value='1'>delete</button>
+  <button name='submit' value='2'>update</button>
     </form>
-
+    
 </body>
 </html>
