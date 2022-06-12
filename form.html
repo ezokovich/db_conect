@@ -3,11 +3,12 @@
 <head>
     <title>Contact</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
 </head>
 <body>
-
+    <i class="bi bi-arrow-right-circle-fill"></i>
     <h1>Contact</h1>
 
     <form action="process-form.php" method="post" >
@@ -45,15 +46,17 @@
         <label>
             <input type="checkbox" name="terms">
             I agree to the terms and conditions
+            <input type="hidden" name="ids">
         </label>
 
         <br>
 
-        <button name="send">Send</button>
-        <button name='submit' value='0'>display</button>
-  <button name='submit' value='1'>delete</button>
-  <button name='submit' value='2'>update</button>
+        <button name="send" value="0">Send</button>
+        
+ 
     </form>
-    
+    <form action="seco.php" method="POST">
+        <button name='submit' value='1'>display</button>
+    </form>
 </body>
 </html>
